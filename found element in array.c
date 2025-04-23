@@ -1,25 +1,13 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main(){
+int main() {
 
-    int marks[]= {25,30,40,54,80};
-    int target;
-    printf("Enter target value :\n");
-    scanf("%d",&target);
-    int found = -1;
-    for(int index=0;index<5;index++){
-        if (marks[index]==target){
-            found=index;
-            break;
-        }
+    int number,hour;
+    float salary,salary_per_hour;
 
-    }
-    if(found==-1){
-        printf("Not found");
-    }
-    else{
-        printf("Found");
-    }
-
+    scanf("%d %d %f",&number,&hour,&salary_per_hour);
+    salary = hour * salary_per_hour;
+    printf("NUMBER = %d\n",number);
+    printf("SALARY = U$ %.2f\n",salary);
     return 0;
 }
